@@ -14,7 +14,24 @@
 9. Dockerized the application by writting a dockerfile building image 
   -> Image build: docker build -t docter-booking .
   -> Running image: docker run -p 3000:3000 docter-booking
-10. 
+10. Created  new EC2 Instance and Intsalled Git in the ECR
+    ->sudo yum install git -y
+
+11. Insatlled Docker in the EC2
+    ->sudo yum install docker
+    ->sudo systemctl start docker
+    ->sudo systemctl enable docker
+
+12. Clone the github repo in ec2 
+    ->git clone https://github.com/mohdaftab131/docter-booking.git
+
+13. change the Directory to the Github repo Folder, Build and Run the Docker image
+
+    -> Image build: docker build -t docter-booking .
+    -> Running image: docker run -p 3000:3000 docter-booking
+
+14. using the public IP of the EC2 Insatce you can run the appliaction and its deployed.
+
 
 
 
